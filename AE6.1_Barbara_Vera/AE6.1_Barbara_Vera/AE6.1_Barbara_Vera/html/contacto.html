@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllShoes - Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/genericos.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="index.html" class="enlace-logo">
+            <img src="../Imagenes/Logos/Logo.png"  class="imagen-logo">
+            <span class="texto-logo">ALLSHOES</span>
+        </a>
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" class="enlace-nav">INICIO</a></li>
+                <li><a href="sobre-nosotros.html" class="enlace-nav">SOBRE NOSOTROS</a></li>
+                <li><a href="cursos.html" class="enlace-nav">CURSOS</a></li>
+                <li><a href="tienda.html" class="enlace-nav">TIENDA</a></li>
+                <li><a href="contacto.html" class="enlace-nav activo">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="caja-titulo-linea">
+            <h1 class="titulo-seccion">CONTACTO</h1>
+        </div>
+        
+        <div class="contenedor-columnas-contacto">
+            <aside class="columna-info-duda">
+                
+                <h3>¿TIENES ALGUNA DUDA?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.consequat.</p>
+                
+                <div class="dato-contacto">
+                    <strong>E-mail:</strong> info@allshoes.es
+                </div>
+                
+                <div class="dato-contacto">
+                    <strong>Redes sociales:</strong>
+                    
+                    <div class="grupo-redes-arco">
+                        <div class="fila-redes-superior">
+                            <a href="#"><img src="../Imagenes/RedesSociales/whatsapp-logo.png" class="icono-red" ></a>
+                            <a href="#"><img src="../Imagenes/RedesSociales/twitter-icon.png" class="icono-red" ></a>
+                            <a href="#"><img src="../Imagenes/RedesSociales/instagram-logo.png" class="icono-red" ></a>
+                            <a href="#"><img src="../Imagenes/RedesSociales/telegram-icon.png" class="icono-red" ></a>
+                        </div>
+                        <div class="fila-redes-inferior">
+                            <a href="#"><img src="../Imagenes/RedesSociales/facebook-icon.png" class="icono-red" ></a>
+                            <img src="../Imagenes/Logos/Logo.png" class="red-logo-central">
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            <section class="columna-formulario">
+                <form action="#" method="POST" class="formulario-contacto">
+                    <label for="campo-nombre" class="oculto-accesibilidad">Nombre</label>
+                    <input type="text" id="campo-nombre" class="campo-datos" placeholder="NOMBRE" required>
+                    
+                    <label for="campo-correo" class="oculto-accesibilidad">Correo electrónico</label>
+                    <input type="email" id="campo-correo" class="campo-datos" placeholder="CORREO (CORREO@EMAIL.COM)" required>
+                    
+                    <label for="campo-telefono" class="oculto-accesibilidad">Teléfono</label>
+                    <input type="tel" id="campo-telefono" class="campo-datos" placeholder="TELÉFONO (+34 XXX XXX XXX)">
+                    
+                    <label for="campo-tema" class="oculto-accesibilidad">Selecciona un tema</label>
+                    <select id="campo-tema" class="campo-datos campo-select" required>
+                        <option value="" disabled selected>TEMA</option>
+                        <option value="pedidos">Pedidos</option>
+                        <option value="devoluciones">Devoluciones</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    
+                    <label for="campo-mensaje" class="oculto-accesibilidad">Escribe tu mensaje</label>
+                    <textarea id="campo-mensaje" class="campo-datos campo-area-texto" placeholder="MENSAJE" required></textarea>
+                    
+                    <div class="fila-control-envio">
+                        <div class="bloque-condiciones">
+                            <input type="checkbox" id="check-condiciones" required>
+                            <label for="check-condiciones">
+                                Aceptar <a href="#" class="enlace-azul">condiciones</a> 
+                                
+                            </label>
+                        </div>
+                        <button type="submit" class="boton-oscuro">ENVIAR</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p> 2026 ALLSHOES. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
