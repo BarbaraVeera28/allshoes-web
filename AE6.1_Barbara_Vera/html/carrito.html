@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllShoes - Carrito</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/genericos.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="index.html" class="enlace-logo">
+            <img src="../Imagenes/Logos/Logo.png"  class="imagen-logo">
+            <span class="texto-logo">ALLSHOES</span>
+        </a>
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" class="enlace-nav">INICIO</a></li>
+                <li><a href="sobre-nosotros.html" class="enlace-nav">SOBRE NOSOTROS</a></li>
+                <li><a href="cursos.html" class="enlace-nav">CURSOS</a></li>
+                <li><a href="tienda.html" class="enlace-nav">TIENDA</a></li>
+                <li><a href="carrito.html" class="enlace-nav activo">CARRITO</a></li>
+                <li><a href="contacto.html" class="enlace-nav">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="caja-titulo-linea">
+            <h1 class="titulo-seccion">MI CARRITO</h1>
+        </div>
+        
+        <div id="contenedor-carrito-vacio" class="carrito-vacio">
+            <p class="texto-carrito-vacio">🛒 Tu carrito está vacío</p>
+            <a href="tienda.html" class="boton-oscuro">CONTINUAR COMPRANDO</a>
+        </div>
+
+        <div id="contenedor-carrito-lleno" class="carrito-lleno" style="display: none;">
+            <div class="tabla-carrito-contenedor">
+                <table class="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>PRODUCTO</th>
+                            <th>TALLA</th>
+                            <th>PRECIO</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-carrito">
+                        <!-- Se genera dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="resumen-carrito">
+                <div class="caja-resumen">
+                    <div class="linea-resumen">
+                        <span class="etiqueta-resumen">SUBTOTAL:</span>
+                        <span class="valor-resumen" id="subtotal">0,00€</span>
+                    </div>
+                    <div class="linea-resumen">
+                        <span class="etiqueta-resumen">ENVÍO:</span>
+                        <span class="valor-resumen" id="envio">GRATIS</span>
+                    </div>
+                    <div class="linea-resumen linea-total">
+                        <span class="etiqueta-resumen">TOTAL:</span>
+                        <span class="valor-total" id="total">0,00€</span>
+                    </div>
+                </div>
+
+                <div class="grupo-botones-carrito">
+                    <a href="tienda.html" class="boton-oscuro boton-continuar">CONTINUAR COMPRANDO</a>
+                    <button class="boton-pagar" id="boton-pagar">PROCEDER AL PAGO</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p> 2026 ALLSHOES. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pagina-carrito.js"></script>
+</body>
+</html>
